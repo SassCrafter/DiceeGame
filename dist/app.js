@@ -52,15 +52,7 @@ function play() {
 }
 
 function selectWinner(n1, n2) {
-	//return n1 > n2 ? 'one' : n1 < n2 ? 'two' : 'draw';
-	if(n1 > n2) {
-		firstPlayerScore++;
-		return 'one';
-	} else if(n1 < n2) {
-		secondPlayerScore++;
-		return 'two';
-	}
-	return 'draw';
+	return n1 > n2 ? 'one' : n1 < n2 ? 'two' : 'draw';
 }
 
 function showWinner(winner) {
