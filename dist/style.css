@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+:root {
+	--bg-color: #393E46;
+	--main-color: #4ECCA3;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: 'Lobster', 'Poppins', sans-serif;
+	min-height: 100vh;
+	background: var(--bg-color);
+	color: var(--main-color);
+	padding-top: 8rem;
+}
+
+.game {
+	width: 95%;
+	max-width: 65rem;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.game__players {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 4rem;
+}
+
+.player {
+	width: 48%;
+}
+
+.player__title {
+	font-size: 2.2rem;
+	font-weight: 400;
+	letter-spacing: .2rem;
+	text-transform: capitalize;
+	margin-bottom: 3rem;
+}
+
+.player__img {
+	width: 100%;
+	max-width: 12rem;
+}
+
+
+.game__btn {
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	border-radius: 50rem;
+	background: var(--main-color);
+	color: white;
+	font-size: 1.7rem;
+	text-transform: capitalize;
+	padding: 1rem 4rem;
+	-webkit-tap-highlight-color: transparent;
+	transition: transform 250ms ease-in-out;
+}
+
+.game__btn:hover {
+	transform: scale(1.1);
+}
+
+.game__win-message {
+	font-size: 3rem;
+	letter-spacing: .3rem;
+	margin-bottom: 2rem;
+}
+
+.game__score {
+	font-size: 3rem;
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 1rem;
+}
+
+
+.large {
+	font-size: 6rem;
+	text-transform: capitalize;
+	margin-bottom: 2rem;
+	letter-spacing: .5rem;
+	text-shadow: .7rem .5rem rgba(0,0,0, .4);
+}
+
+.lead {
+	font-size: 1.8rem;
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 1rem;
+}
+
+
+@media screen and (min-width: 768px) {
+	
+}
